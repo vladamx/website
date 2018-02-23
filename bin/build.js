@@ -55,7 +55,7 @@ function build (done) {
 
   metalsmith.build(err => {
     if (err) {
-      throw err
+      console.error('\x1b[31m', err)
     }
     done && done()
   })
